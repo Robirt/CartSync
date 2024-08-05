@@ -5,6 +5,8 @@ VisualStudioVersion = 17.10.35122.118
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CartSync.API", "CartSync.API\CartSync.API.csproj", "{89340FAE-16CE-4AB6-BCDD-980F7D9D0634}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CartSync.Domain", "CartSync.Domain\CartSync.Domain.csproj", "{9BBA7D13-E558-47AF-8746-677BA106C8E7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{89340FAE-16CE-4AB6-BCDD-980F7D9D0634}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89340FAE-16CE-4AB6-BCDD-980F7D9D0634}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89340FAE-16CE-4AB6-BCDD-980F7D9D0634}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BBA7D13-E558-47AF-8746-677BA106C8E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BBA7D13-E558-47AF-8746-677BA106C8E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BBA7D13-E558-47AF-8746-677BA106C8E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BBA7D13-E558-47AF-8746-677BA106C8E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
