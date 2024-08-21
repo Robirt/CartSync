@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CartSync.Infrastructure", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CartSync.Application", "CartSync.Application\CartSync.Application.csproj", "{FF677519-CB04-4FA4-AA71-820108867718}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CartSync.Presentation", "CartSync.Presentation\CartSync.Presentation.csproj", "{724C2474-DFFD-49DC-83A6-C762610F203F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,12 @@ Global
 		{FF677519-CB04-4FA4-AA71-820108867718}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF677519-CB04-4FA4-AA71-820108867718}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF677519-CB04-4FA4-AA71-820108867718}.Release|Any CPU.Build.0 = Release|Any CPU
+		{724C2474-DFFD-49DC-83A6-C762610F203F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{724C2474-DFFD-49DC-83A6-C762610F203F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{724C2474-DFFD-49DC-83A6-C762610F203F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{724C2474-DFFD-49DC-83A6-C762610F203F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{724C2474-DFFD-49DC-83A6-C762610F203F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{724C2474-DFFD-49DC-83A6-C762610F203F}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
