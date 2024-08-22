@@ -23,5 +23,5 @@ public sealed class UserEntity : EntityBase
     /// <summary>
     /// Gets or sets Lists.
     /// </summary>
-    public List<ListEntity>? Lists { get; set; }
+    public List<ListEntity> Lists { get; set; } = new List<ListEntity>();
 }

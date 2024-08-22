@@ -23,10 +23,10 @@ public sealed class ListEntity : EntityBase
     /// <summary>
     /// Gets or sets Owners.
     /// </summary>
-    public List<UserEntity>? Owners { get; set; }
+    public List<UserEntity> Owners { get; set; } = [];
 
     /// <summary>
     /// Gets or sets Items.
     /// </summary>
-    public List<ItemEntity>? Items { get; set; }
+    public List<ItemEntity> Items { get; set; } = [];
 }

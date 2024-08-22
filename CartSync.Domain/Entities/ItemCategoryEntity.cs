@@ -13,5 +13,5 @@ public sealed class ItemCategoryEntity : EntityBase
     /// <summary>
     /// Gets or sets Items.
     /// </summary>
-    public List<ItemEntity>? Items { get; set; }
+    public List<ItemEntity> Items { get; set; } = [];
 }
