@@ -6,4 +6,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CartSync.Domain\CartSync.Domain.csproj" />
+    <ProjectReference Include="..\CartSync.Infrastructure\CartSync.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

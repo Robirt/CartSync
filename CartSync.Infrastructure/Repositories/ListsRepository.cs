@@ -16,6 +16,8 @@ public sealed class ListsRepository : IListsRepository
     /// <param name="cartSyncDbContext">CartSync Database Context.</param>
     public ListsRepository(CartSyncDbContext cartSyncDbContext)
     {
+        ArgumentNullException.ThrowIfNull(cartSyncDbContext, nameof(cartSyncDbContext));
+
         _cartSyncDbContext = cartSyncDbContext;
     }
 

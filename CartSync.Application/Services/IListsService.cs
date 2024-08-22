@@ -1,14 +1,14 @@
-﻿namespace CartSync.Infrastructure.Repositories;
+﻿using CartSync.Domain.Entities;
 
-using CartSync.Domain.Entities;
+namespace CartSync.Application.Services;
 
 /// <summary>
-/// <see cref="ListEntity"/> Repository.
+/// <see cref="ListEntity"/> Service.
 /// </summary>
-public interface IListsRepository
+public interface IListsService
 {
     /// <summary>
-    /// Gets Lists By User Id.
+    /// Gets Lists by User Id.
     /// </summary>
     /// <param name="userId">User Id.</param>
     /// <param name="cancellationToken">Cancellation Token.</param>
@@ -20,7 +20,7 @@ public interface IListsRepository
     /// </summary>
     /// <param name="id">Id.</param>
     /// <param name="cancellationToken">Cancellation Token.</param>
-    /// <returns>List.</returns>
+    /// <returns></returns>
     Task<ListEntity?> GetListByIdAsync(int id, CancellationToken cancellationToken);
 
     /// <summary>
@@ -38,9 +38,9 @@ public interface IListsRepository
     Task UpdateListAsync(ListEntity list, CancellationToken cancellationToken);
 
     /// <summary>
-    /// Removes List.
+    /// Removes List by Id.
     /// </summary>
-    /// <param name="list">List.</param>
+    /// <param name="id">Id.</param>
     /// <param name="cancellationToken">Cancellation Token.</param>
-    Task RemoveListAsync(ListEntity list, CancellationToken cancellationToken);
+    Task RemoveListByIdAsync(int id, CancellationToken cancellationToken);
 }
