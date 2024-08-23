@@ -34,4 +34,6 @@ webApplication.UseAuthorization();
 
 webApplication.MapControllers();
 
+await webApplication.MigrateDatabaseAsync();
+
 webApplication.Run();

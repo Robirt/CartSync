@@ -1,5 +1,8 @@
 ﻿using CartSync.Application.Services;
+using CartSync.Infrastructure;
 using CartSync.Infrastructure.Repositories;
+using Microsoft.EntityFrameworkCore;
+using System.Xml.Linq;
 
 namespace CartSync.API;
 
@@ -26,5 +29,15 @@ public static class ProgramExtensions
         services.AddScoped<IListsService, ListsService>();
 
         return services;
+    }
+
+    /// <summary>
+    /// Migrates Database.
+    /// </summary>
+    public static async Task<IApplicationBuilder> MigrateDatabaseAsync(this WebApplication application)
+    {
+        await application.Services.CreateAsyncScope().ServiceProvider.GetRequiredService<CartSyncDbContext>().Database.MigrateAsync();
+
+        return application;
     }
 }

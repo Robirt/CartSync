@@ -36,17 +36,21 @@ public sealed class ListsService : IListsService
     /// <inheritdoc />
     public async Task AddListAsync(ListEntity list, CancellationToken cancellationToken)
     {
+        list.CreatedAt = DateTime.Now;
+
         await _listsRepository.AddListAsync(list, cancellationToken);
     }
 
     /// <inheritdoc />
     public async Task UpdateListAsync(ListEntity list, CancellationToken cancellationToken)
     {
+        list.UpdatedAt = DateTime.Now;
+
         await _listsRepository.UpdateListAsync(list, cancellationToken);
     }
 
     /// <inheritdoc />
-    public async Task RemoveListByIdAsync(int id, CancellationToken cancellationToken)
+    public async Task RemoveListAsync(int id, CancellationToken cancellationToken)
     {
         await _listsRepository.RemoveListAsync(await _listsRepository.GetListByIdAsync(id, cancellationToken) ?? throw new ArgumentException($"List with Id {id} not found."), cancellationToken);
     }

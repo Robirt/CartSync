@@ -15,6 +15,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CartSync.Application\CartSync.Application.csproj" />
+    <ProjectReference Include="..\CartSync.Domain\CartSync.Domain.csproj" />
     <ProjectReference Include="..\CartSync.Infrastructure\CartSync.Infrastructure.csproj" />
   </ItemGroup>
 

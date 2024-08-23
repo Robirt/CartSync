@@ -18,7 +18,7 @@ public sealed class ListEntity : EntityBase
     /// <summary>
     /// Gets or sets Updated At.
     /// </summary>
-    public DateTime UpdatedAt { get; set; } = DateTime.Now;
+    public DateTime UpdatedAt { get; set; }
 
     /// <summary>
     /// Gets or sets Owners.

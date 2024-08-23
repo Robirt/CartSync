@@ -42,5 +42,5 @@ public interface IListsService
     /// </summary>
     /// <param name="id">Id.</param>
     /// <param name="cancellationToken">Cancellation Token.</param>
-    Task RemoveListByIdAsync(int id, CancellationToken cancellationToken);
+    Task RemoveListAsync(int id, CancellationToken cancellationToken);
 }
