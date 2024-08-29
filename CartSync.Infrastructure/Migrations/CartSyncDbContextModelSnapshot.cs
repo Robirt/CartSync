@@ -57,6 +57,9 @@ namespace CartSync.Infrastructure.Migrations
                     b.Property<bool>("IsPurchased")
                         .HasColumnType("bit");
 
+                    b.Property<bool>("IsUrgent")
+                        .HasColumnType("bit");
+
                     b.Property<int?>("ItemCategoryId")
                         .HasColumnType("int");
 
@@ -86,6 +89,9 @@ namespace CartSync.Infrastructure.Migrations
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsUrgent")
+                        .HasColumnType("bit");
 
                     b.Property<string>("Name")
                         .IsRequired()

@@ -11,6 +11,11 @@ public sealed class ListEntity : EntityBase
     public string Name { get; set; } = string.Empty;
 
     /// <summary>
+    /// Gets or sets a value indicating whether Is Urgent.
+    /// </summary>
+    public bool IsUrgent { get; set; }
+
+    /// <summary>
     /// Gets or sets Created At.
     /// </summary>
     public DateTime CreatedAt { get; set; } = DateTime.Now;

@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace CartSync.Infrastructure.Migrations
 {
     [DbContext(typeof(CartSyncDbContext))]
-    [Migration("20240822221614_Initial")]
+    [Migration("20240829201022_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -60,6 +60,9 @@ namespace CartSync.Infrastructure.Migrations
                     b.Property<bool>("IsPurchased")
                         .HasColumnType("bit");
 
+                    b.Property<bool>("IsUrgent")
+                        .HasColumnType("bit");
+
                     b.Property<int?>("ItemCategoryId")
                         .HasColumnType("int");
 
@@ -89,6 +92,9 @@ namespace CartSync.Infrastructure.Migrations
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
+
+                    b.Property<bool>("IsUrgent")
+                        .HasColumnType("bit");
 
                     b.Property<string>("Name")
                         .IsRequired()

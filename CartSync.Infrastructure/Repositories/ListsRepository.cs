@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 namespace CartSync.Infrastructure.Repositories;
 
 /// <summary>
-/// Implementation of the <see cref="IListsRepository"/> service.
+/// Implementation of the <see cref="IListsRepository"/>.
 /// </summary>
 public sealed class ListsRepository : IListsRepository
 {

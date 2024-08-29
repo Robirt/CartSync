@@ -21,6 +21,11 @@ public sealed class ItemEntity : EntityBase
     public string Description { get; set; } = string.Empty;
 
     /// <summary>
+    /// Gets or sets a value indicating whether Is Urgent.
+    /// </summary>
+    public bool IsUrgent { get; set; }
+
+    /// <summary>
     /// Gets or sets Created At.
     /// </summary>
     public DateTime CreatedAt { get; set; } = DateTime.Now;
